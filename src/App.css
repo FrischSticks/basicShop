@@ -1,4 +1,8 @@
 body {
     width: 100%;
     margin: 0px;
+    font-family: "Playfair Display", serif;
 }
+
+button {
+    font-family: "Playfair Display", serif;;}

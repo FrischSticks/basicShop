@@ -1,8 +1,11 @@
-.welcomeMessage{
+.welcomeMessage {
     display: flex;
     justify-content: center;
-    font-size: 48px;
-    margin: 100px 0 50px 0;
+    font-size: 80px;
+    margin: 100px;
+    font-family: "Yellowtail", cursive;
+    color: rgb(16, 72, 155);
+    letter-spacing: 1px;
 }
 
 .singleProduct {
@@ -10,24 +13,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 30%;
+    max-width: 25.01%;
     border-radius: 5%;
     margin: auto;
     margin-bottom: 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .singleProduct img {
     max-width: 100%;
 }
 
+.singleProduct:hover {
+    transform: scale(1.03);
+}
+
 .lowerText {
     display: flex;
     width: 90%;
     justify-content: space-between;
-}
-
-.lowerText .price {
-    color: rgb(8, 169, 8);
 }
 
 .products {
