@@ -12,7 +12,7 @@ const ShoppingCart = () => {
 
   return (
     <div className='shoppingCart'>
-      <div className="cartTitle"> <h1> Items in Cart: </h1> </div>
+      <div className="cartTitle"> <h1> Your Cart: </h1> </div>
       <div className="cartItems">
         {PRODUCTS.map((product) => {
           if(cartItems[product.id] !== 0) {
@@ -22,14 +22,16 @@ const ShoppingCart = () => {
       </div>
       { totalCost > 0 ? (
         <div className='cartFooter'>
-          <h2>Total: ${ totalCost }</h2>
-          <button onClick={ () => navigate('/') }>Continue Shopping</button>
-          <button>Checkout</button>
+          <h2 className='totalCost'>Total Cost: ${ totalCost }</h2>
+          <div className="cartFooterBtns">
+            <button className='continueShoppingBtn' onClick={ () => navigate('/') }>Continue Shopping</button>
+            <button className='checkoutBtn'>Checkout</button> 
+          </div>
         </div>
       ) : (
         <div className="emptyCartFooter">
           <h2> Your Cart is Empty!</h2>
-          <button onClick={ () => navigate('/') }>Continue Shopping</button>
+          <button className='continueShoppingBtn' onClick={ () => navigate('/') }>Continue Shopping</button>
         </div>
       )}
     </div>

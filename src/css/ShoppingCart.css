@@ -1,8 +1,12 @@
-.cart {
+.shoppingCart {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .cartTitle {
+    font-size: 24px;
   }
   
   .cartItem {
@@ -13,11 +17,13 @@
     align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
-    margin: 30px;
+    margin: 35px;
   }
   
   .cartItem img {
     width: 200px;
+    margin: 25px;
+    border-radius: 25px;
   }
   
   .cartItem .description {
@@ -30,8 +36,12 @@
     text-align: center;
     font-weight: bolder;
   }
+
+  .totalCost {
+    font-size: 28px;
+  }
   
-  .checkout button {
+  .checkoutBtn button {
     width: 150px;
     height: 50px;
     background-color: rgb(19, 19, 19);
@@ -40,4 +50,39 @@
     border-radius: 8px;
     margin: 10px;
     cursor: pointer;
+  }
+
+  .cartFooterBtns {
+    display: flex;
+    justify-content: flex-start;
+    width: 250px;
+  }
+
+  .checkoutBtn {
+    margin-left: 25px;
+  }
+
+  .checkoutBtn, .continueShoppingBtn {
+      background-color: transparent;
+      border: 2px solid rgb(19, 19, 19);
+      min-width: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 15px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+  }
+
+  .checkoutBtn:hover, .continueShoppingBtn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+
+  .emptyCartFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
